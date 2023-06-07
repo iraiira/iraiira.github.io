@@ -1,0 +1,43 @@
+
+.s-bgimg{
+    height: 70vh; /*видео будет занимать 70% от высоты экрана*/
+    width: 100%;
+    
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.s-bgimg>imgbg{
+    height: 70vh; /*видео будет занимать 70% от высоты экрана*/
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    z-index: 1; /*индекс*/
+}
+
+.effect{ /*затемнение видео*/
+    height: 70vh; /*видео будет занимать 70% от высоты экрана*/
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    z-index: 2; /*индекс*/
+
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.img-text{
+    color: aquamarine;
+    z-index: 2; /*индекс*/
+}

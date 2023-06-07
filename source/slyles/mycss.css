@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+
+body {
+    font-family: Michroma, serif; /*подключение к тэгу новое семейство шрифтов + альтернатива*/
+    background-color: beige;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-expand-lg{
+    
+    background-color: rgb(97, 3, 42);
+    height: 70px;
+}
+
+#navbarNav{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    justify-self: center; /*выравниевание по горизонтали*/
+    align-items: center; /*выравнивание по вертикали*/
+
+}
+.nav-link{
+    color: rgb(235, 193, 207);
+    font-size:larger;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand img{
+    width: 70px;
+}
+
+.navbar-toggler{
+    background-color: rgb(194, 185, 185);
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #1429BD 0%, #010421 100%);
+}
+
+.card{
+    background: linear-gradient(270deg, #1429BD 0%, #010421 100%);
+    color: aquamarine;
+}
+
+.card a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text{
+    color: aquamarine;
+    margin: auto auto; /*задаёт центральное положение по иксу и по игрику*/
+}
+
+
+/* АНИМАЦИЯ */
+
+.call-anim{
+    animation: call 2s ease 0s infinite normal forwards;
+}
+@keyframes call { /*ключевые кадры анимации по времени*/
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px){
+
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+
+
+.footer-text{
+    color: rgb(0, 0, 0);
+    margin: auto auto;
+}
+
+footer, .btn-outline-primary{
+    background-color: rgb(63, 94, 65);
+}
+
+
+.media-links{
+    display: flex;
+    justify-self: center; /*выравниевание по горизонтали*/
+    align-items: center; /*выравнивание по вертикали*/
+}
+
+.btn-play{
+    display: flex;
+    justify-self: center; /*выравниевание по горизонтали*/
+    align-items: center; /*выравнивание по вертикали*/
+}
+.btn-play>a{
+    width: 800px;
+}
+
+
